@@ -14,7 +14,7 @@ How to install it?
 --------------------
 The easiest way to install the gcode-sender chrome extension is to download it from the Chrome Web Store (<https://chrome.google.com/webstore/detail/gcode-sender/ngncibnakmabjlfpadjagnbdjbhoelom>).
 
-If you want to develop for it, you can load the 'src' directory as an unpacked extension. By going to <chrome://extensions/>, ensure 'developer mode' is checked and you should see a program-starter (desktop configuration file) to load it from your local file system, by giving a unique 32-chararacter long reference-name as argument to google-chrome.
+If you want to develop for it, you can load the 'src' directory as an unpacked extension. By going to `<chrome://extensions/>`, ensure 'developer mode' is checked and you should see a program-starter (desktop configuration file) to load it from your local file system, by giving a unique 32-chararacter long reference-name as argument to google-chrome.
 
 Unfortunately, this also means that you cannot simply download the source files from this repository and immediately launch it, since the necessary, randomly generated reference-name string for google-chrome is lacking. It seems the preferred procedure is to download a copy of the 'src' directory from the Chrome Web Store, as described above, and then edit or swap out files as desired.
 
