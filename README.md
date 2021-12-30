@@ -7,7 +7,7 @@ What is this?
 ---------------------
 **gcode-sender** is a chrome application capable of sending [gcode](http://en.wikipedia.org/wiki/Gcode) commands to a USB gcode intrepreter (hobby CNC machines / 3D printers). It was developed by [sir-buckyball](https://github.com/sir-buckyball/chrome-gcode-sender). 
 
-This implementation, **gee-saw-feeder** (GeeSaw feeder), is a superficially retouched fork of that very solid app, in order to adapt it to usage as a 2D (X/Y) gcode sender for a prototype grbl-based CNC scroll-saw machine called '**GeeSaw**'.
+This implementation, **gee-saw-feeder** (GeeSaw feeder), is a superficially retouched fork of that very solid app, adapting it to a 2D (X/Y) only gcode sender matching a prototype grbl-based CNC scroll-saw machine called '**GeeSaw**'.
 
 
 How to install it?
