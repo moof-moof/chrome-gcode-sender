@@ -1,6 +1,6 @@
 ![GeeSaw feeder icon](icon_400x500.png)
 
-chrome-gcode-sender/gee-saw-feeder
+gee-saw-feeder/chrome-gcode-sender
 ===================
 
 What is this?
