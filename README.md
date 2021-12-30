@@ -1,45 +1,38 @@
-chrome-gcode-sender
+![GeeSaw feeder icon](icon_400x500.png)
+
+chrome-gcode-sender/gee-saw-feeder
 ===================
 
-What is this madness?
+What is this?
 ---------------------
-**gcode-sender** is a chrome application capable of sending [gcode](http://en.wikipedia.org/wiki/Gcode) commands to a USB gcode intrepreter (hobby CNC machines / 3D printers).
+**gcode-sender** is a chrome application capable of sending [gcode](http://en.wikipedia.org/wiki/Gcode) commands to a USB gcode intrepreter (hobby CNC machines / 3D printers). It was developed by [sir-buckyball](https://github.com/sir-buckyball/chrome-gcode-sender). 
+
+This implementation, **gee-saw-feeder** (GeeSaw feeder), is a superficially altered fork of that very solid app, customized for usage as a  2D (X/Y) gcode sender for '**GeeSaw**', a prototype grbl-based CNC scroll-saw machine.
 
 
-Why did you do it?
-------------------
-I feel that [Chrome OS](http://en.wikipedia.org/wiki/Chrome_OS) machines have qualities which make them ideal in the machine shop. They are always up to date, secure, have only your cloud-stored files/applications available, relatively cheap, and easily swappable should something bad happen...
-
-The common place alternative is an out of date Windows machine which is usually disconnected from the network, only has local accounts, and is running unknown (potentially malicious) software. Files are typically transferred by flash-drive-sneaker-net.
-
-
-How do I install it?
+How to install it?
 --------------------
-The easiest way to install this extension is to download it from the Chrome Web Store (<https://chrome.google.com/webstore/detail/gcode-sender/ngncibnakmabjlfpadjagnbdjbhoelom>).
+The easiest way to install the gcode-sender chrome extension is to download it from the Chrome Web Store (<https://chrome.google.com/webstore/detail/gcode-sender/ngncibnakmabjlfpadjagnbdjbhoelom>).
 
-If you want to develop for it, you can load the 'src' directory as an unpacked extension. By going to <chrome://extensions/>, ensure 'developer mode' is checked and you should see a button to load it from your local file system.
+If you want to develop for it, you can load the 'src' directory as an unpacked extension. By going to <chrome://extensions/>, ensure 'developer mode' is checked and you should see a program-starter (desktop configuration file) to load it from your local file system, by giving a unique 32-chararacter long reference-name as argument to google-chrome.
+
+Unfortunately, this also means that you cannot simply download the source files from this repository and immediately launch it, since the necessary, randomly generated reference-name string for google-chrome is lacking. It seems the preferred procedure is to download a copy of the 'src' directory from the Chrome Web Store, as described above, and then edit or swap out files as desired.
 
 
-Are there cool keyboard commands?
-----------------------------------
-The control panel has the following:
+Some control panel shortcuts:
+-------------------------------------
 <pre>
 '←', 'j' - jog X axis -N
 '→', 'l' - jog X axis +N
 '↓', 'k' - jog Y axit -N
 '↑', 'i' - jog Y axis +N
-'z' - jog Z axis -N
-'a' - jog Z axis +N
 '+' - increment jump size by 10x
 '-' - decrement jump size by 10x
-'3' - spindle clockwise
-'4' - spindle counter-clockwise
-'5' - spindle off
 '/' - focus command input
 'esc' - blur command input
 </pre>
 
-What libraries did you use?
+Libraries used
 ---------------------------
 * [paper.js](http://paperjs.org/) - canvas rendering library
 * [Bootstrap](http://getbootstrap.com/) - layout library (makes things pretty)
@@ -48,10 +41,3 @@ What libraries did you use?
 * [chrome.serial](http://developer.chrome.com/apps/serial.html) - chrome serial API
 
 
-Are there any known issues?
----------------------------
-Yes. This project uses the github [issue tracker](https://github.com/sir-buckyball/chrome-gcode-sender/issues?state=open).
-* UI doesn't always let the user know of an issue (check the chrome developer console)
-* Sometimes chrome.serial doesn't obey the settings you ask for
-  * try using 9600 baud
-  * check the logs to see if it is forcing flow-control (happens on old Macs)
