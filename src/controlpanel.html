@@ -13,9 +13,13 @@
     </div>
 
     <div class="control-section">
-      <h4>jog controls</h4>
-
+<!--
+      <h3>jog controls</h3>
+-->
+<p><BR></p>
+<p><BR></p>
       <div class="distributed-box">
+<!--
         <div class="stack">
           <button class="btn btn-default flex"
               ng-click="relativeMove('Z')"
@@ -29,6 +33,7 @@
             -Z
           </button>
         </div>
+-->
         <div class="block">
           <div class="stack">
             <button class="btn btn-default"
@@ -38,11 +43,16 @@
             </button>
           </div>
           <div class="stack">
+          </div>
+          <div class="stack">
             <button class="btn btn-default"
                 ng-click="relativeMove('Y')" ng-disabled="!machineService.isConnected">
               <span class="glyphicon glyphicon-chevron-up"></span>
               <div>+Y</div>
             </button>
+            
+<p><BR></p>
+            
             <button class="btn btn-default"
                 ng-click="relativeMove('Y-')" ng-disabled="!machineService.isConnected">
               <div>-Y</div>
@@ -58,6 +68,8 @@
           </div>
         </div>
       </div>
+
+<p><BR></p><p><BR></p> 
 
       <div>
         <form class="form-inline" role="form" id="form-command-jog">
@@ -82,6 +94,9 @@
       </div>
     </div>
 
+<!--  WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW  -->
+
+<!--
     <div class="control-section">
       <div class="distributed-box" ng-show="settings.workspace_show_home">
         <button class="btn btn-default flex"
@@ -121,7 +136,17 @@
             ng-click="sendCommands(['M5\n'])" ng-disabled="!machineService.isConnected">⊘</button>
       </div>
     </div>
+-->
+
+<!--  WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW  -->
+    
+      <div class="bottom-aligner"></div>
+      <div class="bottom-content">
+        <img src="shortcuts_svart.png" > 
+      </div>
+
   </span>
+
 
 
   <span class="col-sm-8">
@@ -146,7 +171,8 @@
       <div class="panel-body" id="console-container">
         <div id="console-log" scroll-glue>
           <div ng-repeat="l in logs track by $index"
-              ng-class="{'is-ack': l.isAck, 'log-user-entry': !l.remoteSource, 'log-remote-entry': l.remoteSource}">{{l.msg}}</div>
+              ng-class="{'is-ack': l.isAck, 'log-user-entry': !l.remoteSource, 'log-remote-entry': l.remoteSource}">{{l.msg}}
+          </div>
         </div>
         <form class="form" role="form" ng-submit="sendManualCommand(manualCommand)">
           <div class="input-group">
@@ -159,6 +185,6 @@
           </div>
         </form>
       </div>
-    </div>
+
   </span>
 </div>

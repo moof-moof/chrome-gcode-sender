@@ -260,6 +260,11 @@ function analyzeGcode(gcode) {
         msg = "coordinate system offset (G92) not implemented.";
         warnings[msg] = (warnings[msg] || 0) + 1;
       }
+    } else if (cType == "G" && cNum == 93) {
+      // Feedrate. Inverse time.
+    } else if (cType == "G" && cNum == 94) {
+      // Feedrate. Units per minute.
+    
     } else if (cType == "M") {
       // M codes can safely be ignored.
       continue;

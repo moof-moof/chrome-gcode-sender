@@ -17,15 +17,15 @@ app.controller('settingsCtrl', function($scope, settingsService) {
 
 app.service('settingsService', function($rootScope) {
   var settings = {
-    workspace_width_mm: 150,
+    workspace_width_mm: 300,
     workspace_depth_mm: 150,
-    workspace_height_mm: 50,
+    workspace_height_mm: 0,
     workspace_port: "",
     workspace_baud: 9600,
-    workspace_show_estop: true,
-    workspace_show_home: false,
-    workspace_show_spindle: false,
-    workspace_show_zero: false,
+    workspace_show_estop: false,
+    workspace_show_home: true,
+    workspace_show_spindle: true,
+    workspace_show_zero: true,
     workspace_jog_feedrate: 0,
     workspace_jog_rapid: false,
     gcode_preamble: "",

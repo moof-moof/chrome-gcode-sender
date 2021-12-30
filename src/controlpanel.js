@@ -5,8 +5,10 @@
 /**
  * The controller for the control panel.
  */
-app.controller('controlPanelCtrl', function($scope, $timeout,
-    hotkeys, settingsService, machineService) {
+app.controller('controlPanelCtrl', function($scope, $timeout, hotkeys, settingsService, machineService) 
+
+{
+
   $scope.emergencyStop = machineService.emergencyStop;
   $scope.settings = settingsService.settings;
   $scope.machineService = machineService;
@@ -30,6 +32,7 @@ app.controller('controlPanelCtrl', function($scope, $timeout,
     }, true);
 
   hotkeys.bindTo($scope)
+/// ====================================================
     .add({
       combo: ['up', 'i'],
       description: 'move the Y axis in the + direction',
@@ -40,6 +43,7 @@ app.controller('controlPanelCtrl', function($scope, $timeout,
       description: 'move the Y axis in the - direction',
       callback: function() {$scope.relativeMove("Y-")}
     })
+/// ====================================================
     .add({
       combo: ['left', 'j'],
       description: 'move the X axis in the - direction',

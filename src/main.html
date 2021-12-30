@@ -1,8 +1,11 @@
 <html ng-app="gcodeSender" ng-csp>
 <head>
   <meta charset="utf-8" />
-	<title>gcode-viewer</title>
+	<title>GeeSaw feeder</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+<!--
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+-->
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="lib/angular-csp.css">
   <link rel="stylesheet" href="lib/hotkeys.min.css">
@@ -33,15 +36,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">gcode-sender</a>
+      <a class="navbar-brand" href="#">[gcode-sender &brvbar; GeeSaw Feeder]</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav" id="main-tabs">
-        <li ng-class="{active:$state.is('controlpanel')}"><a ui-sref="controlpanel">control panel</a></li>
-        <li ng-class="{active:$state.is('loadfile')}"><a ui-sref="loadfile">load file</a></li>
-        <li ng-class="{active:$state.is('settings')}"><a ui-sref="settings">settings</a></li>
-        <li ng-class="{active:$state.is('about')}"><a ui-sref="about">about</a></li>
+        <li ng-class="{active:$state.is('controlpanel')}"><a ui-sref="controlpanel">Kontrollpanel</a></li>
+        <li ng-class="{active:$state.is('loadfile')}"><a ui-sref="loadfile">Filladda</a></li>
+        <li ng-class="{active:$state.is('settings')}"><a ui-sref="settings">Sättningar</a></li>
+        <li ng-class="{active:$state.is('about')}"><a ui-sref="about">Om & Kring</a></li>
       </ul>
 
       <div class="navbar-form navbar-right">
@@ -52,7 +55,7 @@
         <button class="btn btn-danger"
             ng-show="machineService.isConnected"
             ng-disabled="machineService.isBusy"
-            ng-click="disconnect()">disconnect</button>
+            ng-click="disconnect()">slap dog af</button>
       </div>
     </div>
   </nav>
