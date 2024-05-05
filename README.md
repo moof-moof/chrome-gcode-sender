@@ -1,7 +1,10 @@
 ![GeeSaw feeder icon](icon_400x500.png)
 
-gee-saw-feeder/chrome-gcode-sender
+(gee-saw-feeder/chrome-gcode-sender)
 ===================
+
+***NOTE: Google ended support for Chrome apps in 2022, so this application does not work anymore. 
+Please see python based GeeSaw Feeder v2 for an alternative approach to similar functionality.***
 
 What is this?
 ---------------------
