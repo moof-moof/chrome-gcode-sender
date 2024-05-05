@@ -1,4 +1,4 @@
-![GeeSaw feeder icon](icon_400x500.png)
+![GeeSaw feeder icon](icon_400x500_depr.png)
 
 (gee-saw-feeder/chrome-gcode-sender)
 ===================
