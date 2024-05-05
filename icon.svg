@@ -35,15 +35,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1979"
-     inkscape:window-height="1225"
+     inkscape:window-width="2043"
+     inkscape:window-height="1358"
      id="namedview14"
      showgrid="false"
-     inkscape:zoom="2.7812867"
-     inkscape:cx="134.51728"
-     inkscape:cy="244.78817"
-     inkscape:window-x="0"
-     inkscape:window-y="73"
+     inkscape:zoom="1.9666667"
+     inkscape:cx="228.55918"
+     inkscape:cy="238.81088"
+     inkscape:window-x="15"
+     inkscape:window-y="26"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg12" />
   <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
@@ -149,4 +149,25 @@
       </g>
     </g>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:37.33333206px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f20000;fill-opacity:1;stroke:none"
+     x="22.673405"
+     y="318.46869"
+     id="text830"
+     transform="rotate(-22.027273)"><tspan
+       sodipodi:role="line"
+       id="tspan828"
+       x="22.673405"
+       y="318.46869">Deprecated</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="327.45761"
+     y="103.72882"
+     id="text834"><tspan
+       sodipodi:role="line"
+       id="tspan832"
+       x="327.45761"
+       y="139.11945" /></text>
 </svg>
